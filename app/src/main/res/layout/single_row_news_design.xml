@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232323">
+
+        <TextView
+            android:id="@+id/autherTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="autherTV"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/autherTV"
+            android:adjustViewBounds="true"
+            android:paddingHorizontal="15dp"
+            android:scaleType="centerCrop"
+            android:src="#FF9800" />
+
+        <TextView
+            android:id="@+id/newsTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsImage"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="newsTitleTV"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/newsDescriptionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsTitleTV"
+            android:layout_marginStart="15dp"
+            android:text="newsDescriptionTV"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sourceTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsDescriptionTV"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:paddingBottom="10dp"
+            android:text="Source"
+            android:textColor="#2196F3"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/linear"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/newsTitleTV"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:paddingBottom="10dp">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/newsDescriptionTV"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="15dp"-->
+        <!--                android:text="newsDescriptionTV"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="14sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/sourceTV"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="15dp"-->
+        <!--                android:layout_marginEnd="15dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:gravity="end"-->
+        <!--                android:text="Source"-->
+        <!--                android:textColor="#2196F3"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
