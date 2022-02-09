@@ -1,7 +1,6 @@
 package com.example.volleysecondexample;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
@@ -15,15 +14,8 @@ import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -140,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         String apikey = "109a996d712d49cc87ac1b9c369ef8ec";
         String apiurl = "https://newsapi.org/v2/top-headlines?country=in&pageSize=40&apiKey=" + apikey;
 
-        RequestQueue queue = Volley.newRequestQueue(this);
+        //RequestQueue queue = Volley.newRequestQueue(this);
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
@@ -187,6 +179,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        queue.add(jsonObjectRequest);
+        RequestQueueSingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 }
